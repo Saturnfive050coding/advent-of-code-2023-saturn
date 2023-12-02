@@ -1,4 +1,4 @@
-input = open("d1q1.txt", "r")
+input = open("day1.txt", "r")
 entries = input.readlines()
 sum = 0
 
@@ -17,9 +17,7 @@ for entry in entries:
     entry = entry.replace("nine", "9")
     digits = ''.join(filter(str.isdigit, entry))
     digits = digits[0] + digits[len(digits)-1]
-    print(digits)
     sum = sum + int(digits)
-    print(entry)
     
 
 print("Sum: ", sum)
